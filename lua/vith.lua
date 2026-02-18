@@ -1,15 +1,15 @@
+-- Vith — fully transparent background theme
+
 local M = {}
 
 local palette = {
-	bg0 = "#D17B9A", -- main background (use terminal opacity for transparency)
-	bg1 = "#D17B9A",
-	bg2 = "#D17B9A",
-	bg3 = "#D17B9A",
-	bg4 = "#D17B9A",
+	bg0 = "NONE", -- fully transparent background
+	bg1 = "NONE",
+	bg2 = "NONE",
+	bg3 = "NONE",
+	bg4 = "NONE",
 
 	fg = "#C9BEC2",
-	accent = "#D17B9A",
-
 	red = "#D17B9A",
 	orange = "#C5663F",
 	yellow = "#F6C38A",
@@ -23,19 +23,17 @@ local palette = {
 	none = "NONE",
 }
 
---  Helper
 local function hl(group, opts)
 	vim.api.nvim_set_hl(0, group, opts)
 end
 
 function M.setup(overrides)
+	vim.opt.termguicolors = true
 	vim.opt.background = "dark"
 	vim.g.colors_name = "vith"
 
 	local groups = {
-		--------------------------------------------------
 		-- Core UI
-		--------------------------------------------------
 		Normal = { fg = palette.fg, bg = palette.bg0 },
 		SignColumn = { bg = palette.bg0 },
 		EndOfBuffer = { fg = palette.bg0, bg = palette.bg0 },
@@ -43,53 +41,39 @@ function M.setup(overrides)
 		CursorLineNr = { fg = palette.fg, bold = true },
 		CursorLine = { bg = palette.bg1 },
 
-		--------------------------------------------------
 		-- Visuals & Search
-		--------------------------------------------------
 		Visual = { bg = palette.light_yellow, fg = palette.bg0 },
-		Search = { bg = palette.accent, fg = palette.bg0 },
+		Search = { reverse = true },
 		IncSearch = { reverse = true },
 
-		--------------------------------------------------
 		-- Popup Menu
-		--------------------------------------------------
 		Pmenu = { fg = palette.fg, bg = palette.bg2 },
-		PmenuSel = { fg = palette.bg0, bg = palette.accent },
+		PmenuSel = { fg = palette.fg, bg = palette.bg2 },
 
-		--------------------------------------------------
 		-- Statusline
-		--------------------------------------------------
 		StatusLine = { fg = palette.fg, bg = palette.bg3 },
 		StatusLineNC = { fg = palette.grey, bg = palette.bg1 },
 
-		--------------------------------------------------
 		-- Diagnostics
-		--------------------------------------------------
 		DiagnosticError = { fg = palette.red },
 		DiagnosticWarn = { fg = palette.orange },
 		DiagnosticInfo = { fg = palette.blue },
 		DiagnosticHint = { fg = palette.purple },
 
-		--------------------------------------------------
 		-- Syntax
-		--------------------------------------------------
 		Comment = { fg = palette.light_grey, italic = true },
 		String = { fg = palette.green },
 		Character = { fg = palette.green },
 		Number = { fg = palette.purple },
 		Boolean = { fg = palette.purple },
-
 		Identifier = { fg = palette.blue },
 		Function = { fg = palette.green, bold = true },
-
-		Keyword = { fg = palette.accent, bold = true },
-		Conditional = { fg = palette.accent, bold = true },
-		Repeat = { fg = palette.accent, bold = true },
-		Operator = { fg = palette.accent, bold = true },
-
+		Keyword = { fg = palette.red, bold = true },
+		Conditional = { fg = palette.red, bold = true },
+		Repeat = { fg = palette.red, bold = true },
+		Operator = { fg = palette.red, bold = true },
 		Type = { fg = palette.blue, bold = true },
-		Include = { fg = palette.accent, bold = true },
-
+		Include = { fg = palette.red, bold = true },
 		Constant = { fg = palette.cyan, bold = true },
 		Special = { fg = palette.yellow },
 		Todo = { fg = palette.purple, italic = true },
@@ -100,7 +84,7 @@ function M.setup(overrides)
 		hl(group, opts)
 	end
 
-	-- 🌿 Overrides hook
+	-- Apply user overrides if any
 	if overrides then
 		for group, opts in pairs(overrides) do
 			hl(group, opts)
