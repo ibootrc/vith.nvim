@@ -42,13 +42,13 @@ function M.setup(overrides)
 		CursorLine = { bg = palette.bg1 },
 
 		-- Visuals & Search
-		Visual = { bg = palette.fg, fg = palette.bg0 },
+		Visual = { bg = palette.bg0, fg = palette.fg },
 		Search = { reverse = true },
 		IncSearch = { reverse = true },
 
 		-- Popup Menu
-		Pmenu = { fg = palette.fg, bg = palette.grey },
-		PmenuSel = { fg = palette.fg, bg = palette.grey },
+		Pmenu = { fg = palette.grey, bg = palette.bg3 },
+		PmenuSel = { fg = palette.grey, bg = palette.grey },
 
 		-- Statusline
 		StatusLine = { fg = palette.fg, bg = palette.bg3 },
