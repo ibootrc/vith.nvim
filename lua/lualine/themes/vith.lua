@@ -7,7 +7,7 @@ local palette = {
 
 	fg = "#C9BEC2",
 	red = "#D17B9A",
-	red2 = "#D0679D",
+	dred = "#D0679D",
 	orange = "#C5663F",
 	yellow = "#F6C38A",
 	green = "#7BE6AB",
