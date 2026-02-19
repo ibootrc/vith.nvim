@@ -27,9 +27,9 @@ local function hl(group, opts)
 end
 
 function M.setup(overrides)
-	--vim.opt.termguicolors = true
-	--vim.opt.background = "dark"
-	--vim.g.colors_name = "vith"
+	vim.opt.termguicolors = true
+	vim.opt.background = "dark"
+	vim.g.colors_name = "vith"
 
 	local groups = {
 		-- Core UI
