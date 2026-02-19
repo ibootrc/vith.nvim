@@ -51,8 +51,8 @@ function M.setup(overrides)
 		PmenuSel = { fg = palette.fg, bg = palette.bg2 },
 
 		-- Statusline
-		--StatusLine = { fg = palette.fg, bg = palette.bg3 },
-		--StatusLineNC = { fg = palette.grey, bg = palette.bg1 },
+		StatusLine = { fg = palette.fg, bg = palette.bg3 },
+		StatusLineNC = { fg = palette.grey, bg = palette.bg1 },
 
 		-- Diagnostics
 		DiagnosticError = { fg = palette.red },
