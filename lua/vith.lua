@@ -27,9 +27,9 @@ local function hl(group, opts)
 end
 
 function M.setup(overrides)
-	vim.opt.termguicolors = true
-	vim.opt.background = "dark"
-	vim.g.colors_name = "vith"
+	--vim.opt.termguicolors = true
+	--vim.opt.background = "dark"
+	--vim.g.colors_name = "vith"
 
 	local groups = {
 		-- Core UI
@@ -46,8 +46,8 @@ function M.setup(overrides)
 		--IncSearch = { reverse = true },
 
 		-- Popup Menu
-		Pmenu = { fg = palette.grey, bg = palette.bg3 },
-		PmenuSel = { fg = palette.grey, bg = palette.grey },
+		Pmenu = { fg = palette.bg0, bg = palette.grey },
+		PmenuSel = { fg = palette.bg0, bg = palette.grey },
 
 		-- Statusline
 		StatusLine = { fg = palette.fg, bg = palette.bg3 },

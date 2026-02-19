@@ -24,7 +24,7 @@ local palette = {
 local vith_lualine = {}
 
 vith_lualine.normal = {
-	a = { fg = palette.bg0, bg = palette.fgline, gui = "bold" },
+	a = { fg = palette.bg0, bg = palette.grey, gui = "bold" },
 	b = { fg = palette.fg, bg = palette.bg1 },
 	c = { fg = palette.grey, bg = palette.none },
 }
