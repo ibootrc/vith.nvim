@@ -29,7 +29,7 @@ vith_lualine.normal = {
 }
 
 vith_lualine.insert = {
-	a = { fg = palette.bg0, bg = palette.red2, gui = "bold" },
+	a = { fg = palette.bg0, bg = palette.dred, gui = "bold" },
 	b = { fg = palette.fg, bg = palette.bg1 },
 	c = { fg = palette.grey, bg = palette.none },
 }

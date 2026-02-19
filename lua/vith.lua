@@ -34,7 +34,7 @@ function M.setup(overrides)
 
 	local groups = {
 		-- Core UI
-		Normal = { fg = palette.fg, bg = palette.bg0 },
+		Normal = { fg = palette.bg0, bg = palette.fg },
 		SignColumn = { bg = palette.bg0 },
 		EndOfBuffer = { fg = palette.bg0, bg = palette.bg0 },
 		LineNr = { fg = palette.grey, bg = palette.bg0 },
@@ -42,7 +42,7 @@ function M.setup(overrides)
 		CursorLine = { bg = palette.bg1 },
 
 		-- Visuals & Search
-		Visual = { bg = palette.bg0, fg = palette.fg },
+		Visual = { bg = palette.bg0, fg = palette.purple },
 		Search = { reverse = true },
 		IncSearch = { reverse = true },
 
