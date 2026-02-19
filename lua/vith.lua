@@ -34,7 +34,7 @@ function M.setup(overrides)
 
 	local groups = {
 		-- Core UI
-		Normal = { fg = palette.bg0, bg = palette.fg },
+		Normal = { fg = palette.fg, bg = palette.bg0 },
 		SignColumn = { bg = palette.bg0 },
 		EndOfBuffer = { fg = palette.bg0, bg = palette.bg0 },
 		LineNr = { fg = palette.grey, bg = palette.bg0 },
