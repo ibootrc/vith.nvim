@@ -7,7 +7,8 @@ local palette = {
 
 	fg = "#C9BEC2",
 	red = "#D17B9A",
-	dred = "#D0679D",
+	fgline = "#E4F0FB",
+	pink = "#D0679D",
 	orange = "#C5663F",
 	yellow = "#F6C38A",
 	green = "#7BE6AB",
@@ -29,7 +30,7 @@ vith_lualine.normal = {
 }
 
 vith_lualine.insert = {
-	a = { fg = palette.bg0, bg = palette.dred, gui = "bold" },
+	a = { fg = palette.fgline, bg = palette.pink, gui = "bold" },
 	b = { fg = palette.fg, bg = palette.bg1 },
 	c = { fg = palette.grey, bg = palette.none },
 }

@@ -10,12 +10,13 @@ local palette = {
 	bg4 = "NONE",
 
 	fg = "#C9BEC2",
+	fg2 = "#E4F0FB",
 	red = "#D17B9A",
 	orange = "#C5663F",
 	yellow = "#F6C38A",
 	green = "#7BE6AB",
 	cyan = "#4CA1B3",
-	blue = "#64AAE4",
+	blue = "#1b668f",
 	purple = "#7060eb",
 	grey = "#5C5457",
 	light_grey = "#87757C",
@@ -42,7 +43,7 @@ function M.setup(overrides)
 		CursorLine = { bg = palette.bg1 },
 
 		-- Visuals & Search
-		Visual = { bg = palette.purple, fg = palette.bg0 },
+		Visual = { bg = palette.blue, fg = palette.fg2 },
 		Search = { reverse = true },
 		IncSearch = { reverse = true },
 
