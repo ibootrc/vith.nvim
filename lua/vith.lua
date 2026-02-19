@@ -44,8 +44,8 @@ function M.setup(overrides)
 
 		-- Visuals & Search
 		Visual = { bg = palette.blue, fg = palette.fg2 },
-		Search = { reverse = true },
-		IncSearch = { reverse = true },
+		--Search = { reverse = true },
+		--IncSearch = { reverse = true },
 
 		-- Popup Menu
 		Pmenu = { fg = palette.grey, bg = palette.bg3 },
