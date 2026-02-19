@@ -24,13 +24,13 @@ local palette = {
 local vith_lualine = {}
 
 vith_lualine.normal = {
-	a = { fg = palette.bg0, bg = palette.blue, gui = "bold" },
+	a = { fg = palette.bg0, bg = palette.fgline, gui = "bold" },
 	b = { fg = palette.fg, bg = palette.bg1 },
 	c = { fg = palette.grey, bg = palette.none },
 }
 
 vith_lualine.insert = {
-	a = { fg = palette.fgline, bg = palette.pink, gui = "bold" },
+	a = { fg = palette.fgline, bg = palette.blue, gui = "bold" },
 	b = { fg = palette.fg, bg = palette.bg1 },
 	c = { fg = palette.grey, bg = palette.none },
 }

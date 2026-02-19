@@ -1,5 +1,3 @@
--- Vith — fully transparent background theme
-
 local M = {}
 
 local palette = {
