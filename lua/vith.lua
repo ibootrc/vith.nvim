@@ -42,7 +42,7 @@ function M.setup(overrides)
 		CursorLine = { bg = palette.bg1 },
 
 		-- Visuals & Search
-		Visual = { bg = palette.light_yellow, fg = palette.bg0 },
+		Visual = { bg = palette.red, fg = palette.bg0 },
 		Search = { reverse = true },
 		IncSearch = { reverse = true },
 
@@ -51,8 +51,8 @@ function M.setup(overrides)
 		PmenuSel = { fg = palette.fg, bg = palette.bg2 },
 
 		-- Statusline
-		StatusLine = { fg = palette.fg, bg = palette.bg3 },
-		StatusLineNC = { fg = palette.grey, bg = palette.bg1 },
+		--StatusLine = { fg = palette.fg, bg = palette.bg3 },
+		--StatusLineNC = { fg = palette.grey, bg = palette.bg1 },
 
 		-- Diagnostics
 		DiagnosticError = { fg = palette.red },
