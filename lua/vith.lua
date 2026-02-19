@@ -41,7 +41,7 @@ function M.setup(overrides)
 		CursorLine = { bg = palette.bg1 },
 
 		-- Visuals & Search
-		Visual = { bg = palette.bg0, fg = palette.blue },
+		Visual = { bg = palette.blue, fg = palette.grey },
 		--Search = { reverse = true },
 		--IncSearch = { reverse = true },
 
